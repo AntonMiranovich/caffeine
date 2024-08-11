@@ -9,17 +9,16 @@
 
 html {
   width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: Playfair Display;
   font-weight: 400;
-
   color: #121214;
   background-color: #ffffff;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {

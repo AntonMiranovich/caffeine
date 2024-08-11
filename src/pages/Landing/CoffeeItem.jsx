@@ -7,15 +7,19 @@ function CoffeeItem({ coffee }) {
 
   const [pricingMultiplier, setPricingMultiplier] = useState(1)
 
+  const body = document.body
+
   const cofePrace = [{ size: 'S', count: '1s', multiplier: 1 }, { size: 'M', count: '2s', multiplier: 1.5 }, { size: 'L', count: '3s', multiplier: 2 }, { size: 'XL', count: '4s', multiplier: 2.5 }]
-  
+
 
   const handleOrderClick = () => {
     setIsModalOpen(true);
+    body.style = 'overflow-y: hidden'
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    body.style = ''
   };
 
   const changeOfTheMultiplier = (multiplier) => {
