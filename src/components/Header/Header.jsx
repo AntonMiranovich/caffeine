@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import Options from './Options';
 
 const options = [
-  { id: 1, label: 'Home' },
-  { id: 2, label: 'Menu' },
-  { id: 3, label: 'About Us' },
-  { id: 4, label: 'Contact Us' },
+  { id: 1, label: 'Home', position: 800 },
+  { id: 2, label: 'Menu', position: 1450 },
+  { id: 3, label: 'About Us', position: 2120 },
+  { id: 4, label: 'Contact Us', position: 5000 },
 ];
 
 function Header() {
