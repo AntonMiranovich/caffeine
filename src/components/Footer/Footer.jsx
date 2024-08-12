@@ -23,26 +23,28 @@ function Footer() {
               <img src={img4} alt="twitter" />
             </div>
           </div>
-          <div className={style.item}>
-            <h3>About</h3>
-            <p>Menu</p>
-            <p>Features</p>
-            <p>News & Blogs</p>
-            <p>Help & Supports</p>
-          </div>
-          <div className={style.item}>
-            <h3>Company</h3>
-            <p>How we work</p>
-            <p>Terms of service</p>
-            <p>Pricing</p>
-            <p>FAQ</p>
-          </div>
-          <div className={style.item}>
-            <h3>Contact Us</h3>
-            <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
-            <p>+1 202-918-2132</p>
-            <p>beanscene@mail.com</p>
-            <p>www.beanscene.com</p>
+          <div className={style.wrapperItem}>
+            <div className={style.item}>
+              <h3>About</h3>
+              <p>Menu</p>
+              <p>Features</p>
+              <p>News & Blogs</p>
+              <p>Help & Supports</p>
+            </div>
+            <div className={style.item}>
+              <h3>Company</h3>
+              <p>How we work</p>
+              <p>Terms of service</p>
+              <p>Pricing</p>
+              <p>FAQ</p>
+            </div>
+            <div className={style.item}>
+              <h3>Contact Us</h3>
+              <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
+              <p>+1 202-918-2132</p>
+              <p>beanscene@mail.com</p>
+              <p>www.beanscene.com</p>
+            </div>
           </div>
         </div>
       </div>

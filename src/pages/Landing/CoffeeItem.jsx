@@ -9,7 +9,7 @@ function CoffeeItem({ coffee }) {
 
   const body = document.body
 
-  const cofePrace = [{ size: 'S', count: '1s', multiplier: 1 }, { size: 'M', count: '2s', multiplier: 1.5 }, { size: 'L', count: '3s', multiplier: 2 }, { size: 'XL', count: '4s', multiplier: 2.5 }]
+  const cofePrace = [{ id: 1, size: 'S', count: '1s', multiplier: 1 }, { id: 2, size: 'M', count: '2s', multiplier: 1.5 }, { id: 3, size: 'L', count: '3s', multiplier: 2 }, { id: 4, size: 'XL', count: '4s', multiplier: 2.5 }]
 
 
   const handleOrderClick = () => {
@@ -45,7 +45,7 @@ function CoffeeItem({ coffee }) {
 
         <div className={style.itemsSize}>
           {cofePrace.map(el => (
-            <button className={style.count_button} onClick={() => changeOfTheMultiplier(el.multiplier)}>
+            <button key={el.id} className={style.count_button} onClick={() => changeOfTheMultiplier(el.multiplier)}>
               <p className={style.size}>{el.size}</p>
               <p className={style.count}>{el.count}</p>
             </button>

@@ -6,7 +6,7 @@
 }
 
 .bcgrFooter {
-  @include preview-img(url(./assets/fotter_image.png), 100%, 374px, cover);
+  @include preview-img(url(./assets/fotter_image.png), 100%, 450px, cover);
   background-position: center;
 
   .wrapper {
@@ -28,6 +28,11 @@
     @include text($primary-white, 400, 16px, Playfair Display);
   }
 
+  .wrapperItem {
+    @include section(auto, 3% 0);
+    @include flexbox(space-between, start, row, 60px);
+  }
+
   .item {
     @include flexbox(flex-start, start, column, 20px);
     max-width: 380px;
@@ -41,4 +46,39 @@
       display: block;
     }
   }
+}
+
+@media (max-width: 700px) {
+  .bcgr {
+    @include preview-img(url(./assets/bcgr.png), 100%, 0, cover);
+  }
+
+  .bcgrFooter {
+    @include preview-img(url(./assets/bcgr.png), 100%, 800px, cover);
+
+    .wrapper {
+      @include section(auto, 1% 0);
+      @include flexbox(space-between, center, column, 10px);
+    }
+
+    .wrapperItem {
+      @include section(auto, 3% 0);
+      @include flexbox(space-between, start, row, 20px);
+
+      .item {
+        max-width: 180px;
+
+        h3 {
+          @include text($primary-white, 300, 20px, Playfair Display);
+          line-height: 71px;
+        }
+
+        p {
+          @include text($primary-white, 400, 14px, Playfair Display);
+        }
+      }
+
+    }
+  }
+
 }

@@ -29,3 +29,16 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .modalOverlay {
+    justify-content: start;
+
+    .modalContent {
+      margin-left: 3%;
+      max-width: 360px;
+      padding: 10px;
+    }
+  }
+
+}
